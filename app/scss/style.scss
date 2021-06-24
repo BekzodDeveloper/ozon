@@ -1,0 +1,170 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+/*
+font-family: 'Roboto', sans-serif; 
+font-family: 'Ubuntu', sans-serif;
+fonts: 10, 11, 12, Roboto Regular >14<, 18, 24
+*/
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 16.41px;
+  color: #202627;
+}
+
+.header {
+  .logo {
+    max-width: 160px;
+    width: 100%;
+    min-width: 150px;
+  }
+  &__top {
+    background-color: #eeeeee;
+  }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0 12px;
+    background-color: #eeeeee;
+  }
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    max-width: 230px;
+    width: 100%;
+  }
+  &__conditions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 345px;
+    width: 100%;
+  }
+  &__conditions-link,
+  &__register-link-login,
+  &__lang-link-ru {
+    color: #3b7adb;
+    font-size: 12px;
+    line-height: 14.06px;
+  }
+  &__conditions-link-payment,
+  &__register-link-login,
+  &__lang-link-ru {
+    text-decoration: underline;
+  }
+  &__lang-link-uz {
+    color: #898989;
+    font-size: 12px;
+    line-height: 14.06px;
+  }
+  &__register-link-reg {
+    color: #202627;
+    font-size: 12px;
+    line-height: 14.06px;
+  }
+
+  &__inner {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__search {
+    max-width: 427px;
+    min-width: 330px;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin: 0 5px;
+  }
+  &__search-input {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 25px;
+    padding: 11px 160px 12px 25px;
+    color: #898989;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+  }
+  &__search-text {
+    font-size: 12px;
+    line-height: 14.06px;
+    cursor: pointer;
+  }
+  &__search-text-arrow {
+    padding: 0 13px 0 9px;
+    cursor: pointer;
+  }
+  &__search-inner {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: flex;
+    max-width: 140px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__search-btn {
+    background-color: #45b759;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+  &__working-hours {
+    max-width: 136px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+  }
+  &__working-hours-text {
+    padding-left: 14px;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 19px;
+  }
+  &__working-hours-holidays {
+    font-weight: 700;
+  }
+  &__phone {
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    width: 100%;
+    margin: 0 5px;
+  }
+  &__phone-text {
+    padding-left: 16px;
+  }
+  &__phone-icon,
+  &__working-hours-clock {
+    padding-top: 2px;
+  }
+  &__phone-number {
+    font-weight: 700;
+  }
+  &__phone-link {
+    color: #3b7adb;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 14.06px;
+  }
+  &__cart {
+    margin: 0 5px;
+    max-width: 46px;
+    width: 100%;
+    min-width: 46px;
+  }
+}
