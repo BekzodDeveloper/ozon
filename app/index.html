@@ -82,8 +82,18 @@
         </div>
       </div>
       <nav class="menu">
-        <div class="menu__catalogs">
-          <div class="menu__catalogs-text">Каталог товаров</div>
+        <div class="menu__inner">
+          <div class="menu__catalogs">
+            <button class="menu__catalogs-btn" type="menu">
+              <div class="menu__catalogs-btn-burger">
+                <img class="menu__catalogs-btn-burger" src="images/menu-btn.png" alt="">
+              </div>
+              <div class="menu__catalogs-text">Каталог товаров</div>
+              <div class="menu__catalogs-btn-arrow">
+                <img class="menu__catalogs-btn-arrow" src="images/arrow-white.png" alt="">
+              </div>
+            </button>
+          </div>
           <div class="menu__list">
             <div class="menu__item">
               <a class="menu__item-link" href="#">Продукты питания</a>
@@ -93,25 +103,382 @@
               <a class="menu__item-link" href="#">Дом и сад</a>
               <a class="menu__item-link" href="#">Телефоны</a>
             </div>
-            <div class="menu__stocks">
-              <a class="menu__stocks-link" href="#">Акции</a>
-            </div>
+          </div>
+          <div class="menu__stocks">
+            <a class="menu__stocks-link" href="#">
+              <div class="menu__stocks-inner">
+                <img class="menu__stocks-img" src="images/stock-img.png" alt="">
+              </div>
+              <div class="menu__stocks-text">Акции</div>
+            </a>
           </div>
         </div>
       </nav>
-
     </div>
   </header>
-  <div class="wrapper">
 
-    <main class="main"></main>
+  <div class="wrapper">
+    <main class="main">
+      <section class="main-stocks">
+        <div class="container">
+          <div class="main-stocks__inner">
+            <div class="main-stocks__slider">
+              <div class="main-stocks__slider-item"><img class="main-stocks__slider-img" src="" alt=""></div>
+              <div class="main-stocks__slider-item"><img class="main-stocks__slider-img" src="" alt=""></div>
+              <div class="main-stocks__slider-item"><img class="main-stocks__slider-img" src="" alt=""></div>
+            </div>
+            <div class="main-stocks__stocks">
+              <div class="main-stocks__stock-item"><img class="main-stocks__stock-img" src="" alt=""></div>
+              <div class="main-stocks__stock-item"><img class="main-stocks__stock-img" src="" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="features__inner">
+            <div class="features__list">
+              <div class="features__item">
+                <div class="features__item-icon"><img class="features__item-img" src="images/delivery-img.png" alt="">
+                </div>
+                <div class="features__item-text"><a class="features__item-text-link" href="#">Доставка по Самарканду</a>
+                </div>
+              </div>
+              <div class="features__item">
+                <div class="features__item-icon"><img class="features__item-img" src="images/wallet.png" alt="">
+                </div>
+                <div class="features__item-text"><a class="features__item-text-link" href="#">Удобный способ оплаты</a>
+                </div>
+              </div>
+              <div class="features__item">
+                <div class="features__item-icon"><img class="features__item-img" src="images/gift.png" alt="">
+                </div>
+                <div class="features__item-text"><a class="features__item-text-link" href="#">Подарки от Orzon</a>
+                </div>
+              </div>
+              <div class="features__item">
+                <div class="features__item-icon"><img class="features__item-img" src="images/percentage.png" alt="">
+                </div>
+                <div class="features__item-text"><a class="features__item-text-link" href="#">Программа Orzon бонус</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-items">
+        <div class="container">
+          <div class="new-items__inner">
+            <div class="new-items__top">
+              <h2 class="new-items__title title">Новинки</h2>
+              <div class="new-items__see-all">
+                <a class="new-items__see-all-link" href="#">
+                  <div class="new-items__see-all-text">Смотреть все</div>
+                  <div class="new-items__see-all-arrow"><img class="new-items__see-all-arrow-img"
+                      src="images/arrow-to-right.png" alt=""></div>
+                </a>
+              </div>
+            </div>
+            <div class="new-items__products">
+              <div class="new-items__products-slider">
+                <div class="new-items__products-item new-items__first-products-item">
+                  <div class="new-items__products-img-box new-items__first-products-img-box">
+                    <img class="new-items__products-img new-items__first-products-img" src="images/product-bag.png"
+                      alt="">
+                  </div>
+                  <div class="new-items__products-content ">
+                    <div class="new-items__products-name new-items__first-products-name ">
+                      <a class="new-items__products-name new-items__first-products-name" href="#">Банда Умников
+                        Обучающая игра</a>
+                    </div>
+                    <div class="new-items__products-rating new-items__first-products-rating "></div>
+                    <div class="new-items__products-price-strikethrough new-items__first-products-price-strikethrough">
+                      25 000 сум</div>
+                    <div class="new-items__products-price new-items__first-products-price ">25 000 сум</div>
+                    <div class="new-items__products-more new-items__first-products-more "><a
+                        class="new-items__products-more-link new-items__first-products-more-link" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="new-items__products-item">
+                  <div class="new-items__products-img-box"><img class="new-items__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="new-items__products-content">
+                    <div class="new-items__products-price-strikethrough">25 000 сум</div>
+                    <div class="new-items__products-price">25 000 сум</div>
+                    <a class="new-items__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="new-items__products-item">
+                  <div class="new-items__products-img-box"><img class="new-items__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="new-items__products-content">
+                    <div class="new-items__products-price">25 000 сум</div>
+                    <a class="new-items__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="new-items__products-item">
+                  <div class="new-items__products-img-box"><img class="new-items__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="new-items__products-content">
+                    <div class="new-items__products-price">25 000 сум</div>
+                    <a class="new-items__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="new-items__products-item">
+                  <div class="new-items__products-img-box"><img class="new-items__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="new-items__products-content">
+                    <div class="new-items__products-price">25 000 сум</div>
+                    <a class="new-items__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="discounts">
+        <div class="container">
+          <div class="discounts__inner">
+            <div class="discounts__top">
+              <h2 class="discounts__title title">Скидки дня</h2>
+              <div class="discounts__see-all">
+                <a class="discounts__see-all-link" href="#">
+                  <div class="discounts__see-all-text">Смотреть все</div>
+                  <div class="discounts__see-all-arrow"><img class="discounts__see-all-arrow-img"
+                      src="images/arrow-to-right.png" alt=""></div>
+                </a>
+              </div>
+            </div>
+            <div class="discounts__products">
+              <div class="discounts__products-slider">
+                <div class="discounts__products-item discounts__first-products-item">
+                  <div class="discounts__products-img-box discounts__first-products-img-box">
+                    <img class="discounts__products-img discounts__first-products-img" src="images/product-bag.png"
+                      alt="">
+                  </div>
+                  <div class="discounts__products-content ">
+                    <div class="discounts__products-name discounts__first-products-name ">
+                      <a class="discounts__products-name discounts__first-products-name" href="#">Банда Умников
+                        Обучающая игра</a>
+                    </div>
+                    <div class="discounts__products-rating discounts__first-products-rating "></div>
+                    <div class="discounts__products-price-strikethrough discounts__first-products-price-strikethrough">
+                      25 000 сум</div>
+                    <div class="discounts__products-price discounts__first-products-price ">25 000 сум</div>
+                    <div class="discounts__products-more discounts__first-products-more "><a
+                        class="discounts__products-more-link discounts__first-products-more-link" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price-strikethrough">25 000 сум</div>
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bestsellers">
+        <div class="container">
+          <div class="bestsellers__inner">
+            <div class="bestsellers__top">
+              <h2 class="bestsellers__title title">Скидки дня</h2>
+              <div class="bestsellers__see-all">
+                <a class="bestsellers__see-all-link" href="#">
+                  <div class="bestsellers__see-all-text">Смотреть все</div>
+                  <div class="bestsellers__see-all-arrow"><img class="bestsellers__see-all-arrow-img"
+                      src="images/arrow-to-right.png" alt=""></div>
+                </a>
+              </div>
+            </div>
+            <div class="bestsellers__products">
+              <div class="bestsellers__products-slider">
+                <div class="bestsellers__products-item bestsellers__first-products-item">
+                  <div class="bestsellers__products-img-box bestsellers__first-products-img-box">
+                    <img class="bestsellers__products-img bestsellers__first-products-img" src="images/product-bag.png"
+                      alt="">
+                  </div>
+                  <div class="bestsellers__products-content ">
+                    <div class="bestsellers__products-name bestsellers__first-products-name ">
+                      <a class="bestsellers__products-name bestsellers__first-products-name" href="#">Банда Умников
+                        Обучающая игра</a>
+                    </div>
+                    <div class="bestsellers__products-rating bestsellers__first-products-rating "></div>
+                    <div
+                      class="bestsellers__products-price-strikethrough bestsellers__first-products-price-strikethrough">
+                      25 000 сум</div>
+                    <div class="bestsellers__products-price bestsellers__first-products-price ">25 000 сум</div>
+                    <div class="bestsellers__products-more bestsellers__first-products-more "><a
+                        class="bestsellers__products-more-link bestsellers__first-products-more-link"
+                        href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="bestsellers__products-item">
+                  <div class="bestsellers__products-img-box"><img class="bestsellers__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="bestsellers__products-content">
+                    <div class="bestsellers__products-price-strikethrough">25 000 сум</div>
+                    <div class="bestsellers__products-price">25 000 сум</div>
+                    <a class="bestsellers__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="bestsellers__products-item">
+                  <div class="bestsellers__products-img-box"><img class="bestsellers__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="bestsellers__products-content">
+                    <div class="bestsellers__products-price">25 000 сум</div>
+                    <a class="bestsellers__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="bestsellers__products-item">
+                  <div class="bestsellers__products-img-box"><img class="bestsellers__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="bestsellers__products-content">
+                    <div class="bestsellers__products-price">25 000 сум</div>
+                    <a class="bestsellers__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="bestsellers__products-item">
+                  <div class="bestsellers__products-img-box"><img class="bestsellers__products-img"
+                      src="images/prouct-book-1.png" alt=""></div>
+                  <div class="bestsellers__products-content">
+                    <div class="bestsellers__products-price">25 000 сум</div>
+                    <a class="bestsellers__products-name" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offers">
+        <div class="container">
+          <div class="offers__inner">
+            <div class="offers__list">
+              <div class="offers__list-item"><img class="offers__item-img" src="images/stock-smartphones.jpg" alt="">
+              </div>
+              <div class="offers__list-item-mini">
+                <div class="offers__list-box-img"><img class="offers__item-box-img" src="images/stock-mi-band.jpg"
+                    alt=""></div>
+                <div class="offers__list-box-img"><img class="offers__item-box-img" src="images/stock-electronics.jpg"
+                    alt=""></div>
+              </div>
+            </div>
+            <div class="offers__list">
+              <div class="offers__list-item"><img class="offers__item-img" src="images/stock-10000rub.jpg" alt="">
+              </div>
+              <div class="offers__list-item-mini">
+                <div class="offers__list-box-img"><img class="offers__item-box-img" src="images/stock-sells-80.jpg"
+                    alt=""></div>
+                <div class="offers__list-box-img"><img class="offers__item-box-img"
+                    src="images/stock-summer-updates.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands">
+        <div class="container">
+          <div class="brands__inner">
+            <h2 class="brands__title title">Бренды</h2>
+            <div class="brands__slider">
+
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-braun.jpg" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-philips.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-asus.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-lg.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-molisana.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-philips.png" alt=""></div>
+
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-braun.jpg" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-philips.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-asus.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-lg.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-molisana.png" alt=""></div>
+              <div class="brands__item"><img class="brands__item-img" src="images/brand-philips.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="container">
+          <div class="articles__inner">
+            <h2 class="articles__title title">Статьи</h2>
+            <div class="articles__list">
+              <div class="articles__item">
+                <div class="articles__img-box"><img class="articles__item-img" src="images/post-phones.jpg" alt="">
+                </div>
+                <div class="articles__date">26 Июля</div>
+                <div class="articles__text"><a class="articles__text-link" href="#">Российская сеть магазинов бытовой
+                    техники и электроники.</a></div>
+              </div>
+              <div class="articles__item">
+                <div class="articles__img-box"><img class="articles__item-img" src="images/post-arrow.png" alt="">
+                </div>
+                <div class="articles__date">26 Июля</div>
+                <div class="articles__text"><a class="articles__text-link" href="#">Российская сеть магазинов бытовой
+                    техники и
+                    электроники.</a></div>
+              </div>
+              <div class="articles__item">
+                <div class="articles__img-box"><img class="articles__item-img" src="images/post-online.png" alt="">
+                </div>
+                <div class="articles__date">26 Июля</div>
+                <div class="articles__text"><a class="articles__text-link" href="#">Российская сеть магазинов бытовой
+                    техники и
+                    электроники.</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="logo">
             <a class="logo-link" href="#">
-              <img class="logo-img" src="">
+              <img class="logo-img" src="images/logo-white.png">
             </a>
           </div>
           <div class="footer__links-list">
@@ -158,14 +525,28 @@
             </div>
           </div>
           <div class="footer__contacts">
-            <div class="footer__contacts-text">Остались вопросы? Звоните нам:</div>
-            <div class="footer__contacts-phone">+ 998 90 200 00 00</div>
-            <div class="footer__contacts-call">
-              <a class="footer__contacts-call-link" href="#">Заказать звонок</a>
+
+            <div class="footer__contacts-inner">
+              <div class="footer__contacts-icon">
+                <img class="footer__contacts-img" src="images/phone-footer.png" alt="">
+              </div>
+              <div class="footer__contacts-content">
+                <div class="footer__contacts-text">Остались вопросы? Звоните нам:</div>
+                <div class="footer__contacts-phone">+ 998 90 200 00 00</div>
+                <div class="footer__contacts-call">
+                  <a class="footer__contacts-call-link" href="#">Заказать звонок</a>
+                </div>
+              </div>
             </div>
+
             <div class="footer__address">
-              140100 Узбекистан, Самарканд
-              Беруний 196 д 56
+              <div class="footer__address-icon">
+                <img class="footer__address-img" src="images/marker.png" alt="">
+              </div>
+              <div class="footer__address-content">
+                140100 Узбекистан, Самарканд
+                Беруний 196 д 56
+              </div>
             </div>
           </div>
         </div>
@@ -173,9 +554,9 @@
           <div class="footer__payment">
             <div class="footer__payment-text">Способы оплаты:</div>
             <div class="footer__payment-list">
-              <img class="footer__payment-img" src="" alt="">
-              <img class="footer__payment-img" src="" alt="">
-              <img class="footer__payment-img" src="" alt="">
+              <div class="footer__payment-item"><img class="footer__payment-img" src="images/click.png" alt=""></div>
+              <div class="footer__payment-item"><img class="footer__payment-img" src="images/payme.png" alt=""></div>
+              <div class="footer__payment-item"><img class="footer__payment-img" src="images/cash.png" alt=""></div>
             </div>
           </div>
           <div class="footer__social">
@@ -183,17 +564,17 @@
             <div class="footer__social-list">
               <div class="footer__social-item">
                 <a class="footer__social-link" href="#">
-                  <img class="footer__social-img" src="" alt="">
+                  <img class="footer__social-img" src="images/fb.png" alt="">
                 </a>
               </div>
               <div class="footer__social-item">
                 <a class="footer__social-link" href="#">
-                  <img class="footer__social-img" src="" alt="">
+                  <img class="footer__social-img" src="images/insta.png" alt="">
                 </a>
               </div>
               <div class="footer__social-item">
                 <a class="footer__social-link" href="#">
-                  <img class="footer__social-img" src="" alt="">
+                  <img class="footer__social-img" src="images/tg.png" alt="">
                 </a>
               </div>
             </div>
@@ -201,7 +582,7 @@
           <div class="footer__brand">
             <div class="footer__brand-text">Разработка сайтов:</div>
             <a class="footer__brand-link" href="#">
-              <img class="footer__brand-img" src="" alt="">
+              <img class="footer__brand-img" src="images/brand-site.png" alt="">
             </a>
           </div>
         </div>
@@ -215,10 +596,10 @@
     </footer>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/slick.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
   <script src="js/main.min.js"></script>
+  <script src="js/slick.min.js"></script>
 </body>
 
 </html>
