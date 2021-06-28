@@ -10,12 +10,12 @@ $(document).ready((function () {
     centerMode: true,
     variableWidth: true,
     responsive: [
-      {
-        breakpoint: 1260,
-        settings: {
-          // centerMode: true,
-        }
-      },
+      // {
+      //   breakpoint: 1260,
+      //   settings: {
+      //     // centerMode: true,
+      //   }
+      // },
       //   {
       //     breakpoint: 600,
       //     settings: {
@@ -40,7 +40,7 @@ $(document).ready((function () {
     infinite: false,
     autoplay: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     centerMode: false,
@@ -49,37 +49,22 @@ $(document).ready((function () {
     // initialSlide: 2,
     responsive: [
       {
-        breakpoint: 1260,
+        breakpoint: 450,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 1,
+          centerMode: true,
+
         }
       },
-      //   {
-      //     breakpoint: 600,
-      //     settings: {
-      //       slidesToShow: 2,
-      //       slidesToScroll: 2
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 480,
-      //     settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1
-      //     }
-      //   }
-      //   // You can unslick at a given breakpoint now by adding:
-      //   // settings: "unslick"
-      //   // instead of a settings object
     ]
   });
 
   $('.discounts__products-slider').slick({
     dots: false,
-    infinite: false,
-    autoplay: false,
+    infinite: true,
+    autoplay: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     centerMode: false,
@@ -87,51 +72,35 @@ $(document).ready((function () {
     // focusOnSelect: true,
     // initialSlide: 2,
     responsive: [
-      {
-        breakpoint: 1260,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-      //   {
-      //     breakpoint: 600,
-      //     settings: {
-      //       slidesToShow: 2,
-      //       slidesToScroll: 2
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 480,
-      //     settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1
-      //     }
+      // {
+      //   breakpoint: 1260,
+      //   settings: {
+      //     slidesToShow: 1,
       //   }
-      //   // You can unslick at a given breakpoint now by adding:
-      //   // settings: "unslick"
-      //   // instead of a settings object
+      // },
     ]
   });
 
   $('.bestsellers__products-slider').slick({
     dots: false,
     infinite: false,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
     centerMode: false,
     variableWidth: true,
-    // focusOnSelect: true,
-    // initialSlide: 2,
     responsive: [
-      {
-        breakpoint: 1260,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
+      // {
+      //   breakpoint: 450,
+      //   settings: {
+      //     variableWidth: false,
+      //     slidesToShow: 1,
+      //     centerMode: true,
+
+      //   }
+      // },
       //   {
       //     breakpoint: 600,
       //     settings: {
@@ -160,6 +129,7 @@ $(document).ready((function () {
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -181,13 +151,13 @@ $(document).ready((function () {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 420,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
         }
@@ -305,6 +275,8 @@ $(document).ready((function () {
     $(".discounts__hover-item-star").css("color", "#ffc600");
   });
 
-
+  $("#menu__btn").click(function () {
+    $("#menu__list").toggleClass("open-menu");
+  });
 
 }));
