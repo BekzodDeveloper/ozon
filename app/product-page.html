@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OZON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="header__conditions">
+            <a class="header__conditions-link" href="#">Условия доставка</a>
+            <a class="header__conditions-link header__conditions-link-payment" href="#">Условия оплаты</a>
+            <a class="header__conditions-link" href="#">Помощь</a>
+          </div>
+          <div class="header__profile">
+            <div class="header__register">
+              <a class="header__register-link-login" href="#">Войти</a> /
+              <a class="header__register-link-reg" href="#">Регистрация</a>
+            </div>
+            <div class="header__lang">
+              <a class="header__lang-link header__lang-link-uz" href="#">UZ</a>
+              <a class="header__lang-link header__lang-link-ru" href="#">RU</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <a class="logo-link" href="#">
+            <img class="logo-img" src="images/logo.png">
+          </a>
+        </div>
+        <div class="header__search">
+          <input class="header__search-input" type="text" name="" id="" placeholder="Поиск по каталогу">
+          <div class="header__search-inner">
+            <div class="header__search-text">Все разделы</div>
+            <div class="header__search-text-arrow">
+              <img class="header__search-text-arrow-img" src="images/arrow.png" alt="">
+            </div>
+            <button class="header__search-btn" type="button">
+              <img class="header__search-btn-img" src="images/search-img.png" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="header__working-hours">
+          <div class="header__working-hours-clock">
+            <img class="header__working-hours-clock-img" src="images/clock.png" alt="">
+          </div>
+          <div class="header__working-hours-text">
+            <div class="header__working-hours-holidays">Без выходных</div>
+            <div class="header__working-hours-times">9.00 - 21.00</div>
+          </div>
+        </div>
+        <div class="header__phone">
+          <div class="header__phone-icon">
+            <img class="header__phone-icon-img" src="images/phone.png" alt="">
+          </div>
+          <div class="header__phone-text">
+            <div class="header__phone-number">+ 998 90 200 00 00</div>
+            <a class="header__phone-link" href="#">Заказать звонок</a>
+          </div>
+        </div>
+        <div class="header__cart">
+          <a class="header__cart-link" href="#">
+            <img class="header__cart-img" src="images/cart.png" alt="">
+          </a>
+        </div>
+      </div>
+      <nav class="menu">
+        <div class="menu__inner">
+          <div class="menu__catalogs">
+            <button class="menu__catalogs-btn" type="menu">
+              <div class="menu__catalogs-btn-burger">
+                <img class="menu__catalogs-btn-burger" src="images/menu-btn.png" alt="">
+              </div>
+              <div class="menu__catalogs-text">Каталог товаров</div>
+              <div class="menu__catalogs-btn-arrow">
+                <img class="menu__catalogs-btn-arrow" src="images/arrow-white.png" alt="">
+              </div>
+            </button>
+          </div>
+          <div id="menu__list" class="menu__list">
+            <div class="menu__item"><a class="menu__item-link" href="#">Продукты питания</a></div>
+            <div class="menu__item"><a class="menu__item-link" href="#">Книги</a></div>
+            <div class="menu__item"><a class="menu__item-link" href="#">Электроника</a></div>
+            <div class="menu__item"><a class="menu__item-link" href="#">Бытовая техника</a></div>
+            <div class="menu__item"><a class="menu__item-link" href="#">Дом и сад</a></div>
+            <div class="menu__item"><a class="menu__item-link" href="#">Телефоны</a></div>
+          </div>
+          <div class="menu__stocks">
+            <a class="menu__stocks-link" href="#">
+              <div class="menu__stocks-inner">
+                <img class="menu__stocks-img" src="images/stock-img.png" alt="">
+              </div>
+              <div class="menu__stocks-text">Акции</div>
+            </a>
+          </div>
+          <div class="menu__box-btn">
+            <button id="menu__btn" class="menu__btn"><img class="menu__btn-img" src="images/menu-btn.png"
+                alt=""></button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="wrapper">
+    <main class="main">
+      <section class="discounts">
+        <div class="container">
+          <div class="discounts__inner">
+            <div class="discounts__top">
+              <h2 class="discounts__title title">Вы недавно смотрели</h2>
+              <div class="discounts__see-all">
+                <a class="discounts__see-all-link" href="#">
+                  <div class="discounts__see-all-text">Смотреть все</div>
+                  <div class="discounts__see-all-arrow"><img class="discounts__see-all-arrow-img"
+                      src="images/arrow-to-right.png" alt=""></div>
+                </a>
+              </div>
+            </div>
+            <div class="discounts__products">
+              <div class="discounts__products-slider">
+
+                <div class=" discounts__first-products-item">
+                  <div class="discounts__first-products-img-box">
+                    <img class="discounts__first-products-img" src="images/product-book-2.png" alt="">
+                  </div>
+                  <div class="discounts__first-products-content">
+
+                    <div class="discounts__first-products-name ">
+                      <a class="discounts__first-products-name-link" href="#">Банда Умников
+                        Обучающая игра</a>
+                    </div>
+                    <div class="discounts__first-products-rating ">
+                      <i class="fas fa-star discounts__star" id="discounts__star-1"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-2"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-3"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-4"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-5"></i>
+                    </div>
+                    <div class="discounts__first-products-price-strikethrough">
+                      25 000 сум</div>
+                    <div class="discounts__first-products-price">25 000 сум</div>
+                    <div class="discounts__first-products-more "><a class="discounts__first-products-more-link"
+                        href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-oral.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price-strikethrough">25 000 сум</div>
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-toy-2.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-cleaner.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-gel.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-book-1.png" alt="">
+                  </div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price-strikethrough">25 000 сум</div>
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-chicory.png" alt="">
+                  </div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-toy-1.png" alt="">
+                  </div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="discounts">
+        <div class="container">
+          <div class="discounts__inner">
+            <div class="discounts__top">
+              <h2 class="discounts__title title">Рекомендуем также</h2>
+              <div class="discounts__see-all">
+                <a class="discounts__see-all-link" href="#">
+                  <div class="discounts__see-all-text">Смотреть все</div>
+                  <div class="discounts__see-all-arrow"><img class="discounts__see-all-arrow-img"
+                      src="images/arrow-to-right.png" alt=""></div>
+                </a>
+              </div>
+            </div>
+            <div class="discounts__products">
+              <div class="discounts__products-slider">
+
+                <div class=" discounts__first-products-item">
+                  <div class="discounts__first-products-img-box">
+                    <img class="discounts__first-products-img" src="images/product-book-2.png" alt="">
+                  </div>
+                  <div class="discounts__first-products-content">
+
+                    <div class="discounts__first-products-name ">
+                      <a class="discounts__first-products-name-link" href="#">Банда Умников
+                        Обучающая игра</a>
+                    </div>
+                    <div class="discounts__first-products-rating ">
+                      <i class="fas fa-star discounts__star" id="discounts__star-1"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-2"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-3"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-4"></i>
+                      <i class="fas fa-star discounts__star" id="discounts__star-5"></i>
+                    </div>
+                    <div class="discounts__first-products-price-strikethrough">
+                      25 000 сум</div>
+                    <div class="discounts__first-products-price">25 000 сум</div>
+                    <div class="discounts__first-products-more "><a class="discounts__first-products-more-link"
+                        href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-oral.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price-strikethrough">25 000 сум</div>
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-toy-2.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-cleaner.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-gel.png" alt=""></div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-book-1.png" alt="">
+                  </div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price-strikethrough">25 000 сум</div>
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-chicory.png" alt="">
+                  </div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+                <div class="discounts__products-item">
+
+                  <div class="discounts__products-img-box"><img class="discounts__products-img"
+                      src="images/product-toy-1.png" alt="">
+                  </div>
+                  <div class="discounts__products-content">
+                    <div class="discounts__products-price">25 000 сум</div>
+                    <a class="discounts__products-name-link" href="#">Банда Умников Обучающая игра</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="testimonials">
+        <div class="container">
+          <div class="testimonials__inner">
+            <h2 class="title">Отзывы покупателей</h2>
+            <div class="testimonials__list">
+              <div class="testimonials__item">
+                <div class="testimonials__item-info">
+                  <div class="testimonials__info-box">
+                    <div class="testimonials__item-rating">
+                      <img class="testimonials__rating-img" src="images/testimonials-stars.png" alt="">
+                    </div>
+                    <div class="testimonials__name">Светлана Ходакова</div>
+                    <div class="testimonials__more-info">36 лет. Россия, Москва</div>
+                  </div>
+                  <div class="testimonials__date">27 августа 2018</div>
+                </div>
+                <div class="testimonials__content">
+                  <div class="testimonials__content-top">
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Достоинства</div>
+                      <div class="testimonials__content-text">Компактный</div>
+                    </div>
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Недостатки</div>
+                      <div class="testimonials__content-text">нет</div>
+                    </div>
+                  </div>
+                  <div class="testimonials__content-comment">
+                    <div class="testimonials__comment-name">Комментарий</div>
+                    <div class="testimonials__comment-text">Очень понравился, удобно и практично. Экономит время. Объем
+                      вполне подходит для семейного или дружеского чаепития. Очень
+                      понравился, удобно и практично. Экономит время. Объем вполне подходит для семейного или дружеского
+                      чаепития.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item">
+                <div class="testimonials__item-info">
+                  <div class="testimonials__info-box">
+                    <div class="testimonials__item-rating">
+                      <img class="testimonials__rating-img" src="images/testimonials-stars.png" alt="">
+                    </div>
+                    <div class="testimonials__name">Светлана Ходакова</div>
+                    <div class="testimonials__more-info">36 лет. Россия, Москва</div>
+                  </div>
+                  <div class="testimonials__date">27 августа 2018</div>
+                </div>
+                <div class="testimonials__content">
+                  <div class="testimonials__content-top">
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Достоинства</div>
+                      <div class="testimonials__content-text">Компактный</div>
+                    </div>
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Недостатки</div>
+                      <div class="testimonials__content-text">нет</div>
+                    </div>
+                  </div>
+                  <div class="testimonials__content-comment">
+                    <div class="testimonials__comment-name">Комментарий</div>
+                    <div class="testimonials__comment-text">Очень понравился, удобно и практично. Экономит время. Объем
+                      вполне подходит для семейного или дружеского чаепития. Очень
+                      понравился, удобно и практично. Экономит время. Объем вполне подходит для семейного или дружеского
+                      чаепития.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item">
+                <div class="testimonials__item-info">
+                  <div class="testimonials__info-box">
+                    <div class="testimonials__item-rating">
+                      <img class="testimonials__rating-img" src="images/testimonials-stars.png" alt="">
+                    </div>
+                    <div class="testimonials__name">Светлана Ходакова</div>
+                    <div class="testimonials__more-info">36 лет. Россия, Москва</div>
+                  </div>
+                  <div class="testimonials__date">27 августа 2018</div>
+                </div>
+                <div class="testimonials__content">
+                  <div class="testimonials__content-top">
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Достоинства</div>
+                      <div class="testimonials__content-text">Компактный</div>
+                    </div>
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Недостатки</div>
+                      <div class="testimonials__content-text">нет</div>
+                    </div>
+                  </div>
+                  <div class="testimonials__content-comment">
+                    <div class="testimonials__comment-name">Комментарий</div>
+                    <div class="testimonials__comment-text">Очень понравился, удобно и практично. Экономит время. Объем
+                      вполне подходит для семейного или дружеского чаепития. Очень
+                      понравился, удобно и практично. Экономит время. Объем вполне подходит для семейного или дружеского
+                      чаепития.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item">
+                <div class="testimonials__item-info">
+                  <div class="testimonials__info-box">
+                    <div class="testimonials__item-rating">
+                      <img class="testimonials__rating-img" src="images/testimonials-stars.png" alt="">
+                    </div>
+                    <div class="testimonials__name">Светлана Ходакова</div>
+                    <div class="testimonials__more-info">36 лет. Россия, Москва</div>
+                  </div>
+                  <div class="testimonials__date">27 августа 2018</div>
+                </div>
+                <div class="testimonials__content">
+                  <div class="testimonials__content-top">
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Достоинства</div>
+                      <div class="testimonials__content-text">Компактный</div>
+                    </div>
+                    <div class="testimonials__content-box">
+                      <div class="testimonials__content-name">Недостатки</div>
+                      <div class="testimonials__content-text">нет</div>
+                    </div>
+                  </div>
+                  <div class="testimonials__content-comment">
+                    <div class="testimonials__comment-name">Комментарий</div>
+                    <div class="testimonials__comment-text">Очень понравился, удобно и практично. Экономит время. Объем
+                      вполне подходит для семейного или дружеского чаепития. Очень
+                      понравился, удобно и практично. Экономит время. Объем вполне подходит для семейного или дружеского
+                      чаепития.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonials__show-more">
+              <a class="testimonials__show-more-text" href="#">Показать еще отзывы</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="logo">
+            <a class="logo-link" href="#">
+              <img class="logo-img" src="images/logo-white.png">
+            </a>
+          </div>
+          <div class="footer__links-list">
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">О компании</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Контакты</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Часто задаваемые вопросы</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Все бренды</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Акции</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Orzon бонус</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Каталог</a>
+            </div>
+          </div>
+          <div class="footer__links-list">
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Напишите нам!</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Доставка</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Оплата</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Оплата картой</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Обмен/возврат</a>
+            </div>
+            <div class="footer__links-item">
+              <a class="footer__item-link" href="#">Заявка на возврат средств</a>
+            </div>
+          </div>
+          <div class="footer__contacts">
+
+            <div class="footer__contacts-inner">
+              <div class="footer__contacts-icon">
+                <img class="footer__contacts-img" src="images/phone-footer.png" alt="">
+              </div>
+              <div class="footer__contacts-content">
+                <div class="footer__contacts-text">Остались вопросы? Звоните нам:</div>
+                <div class="footer__contacts-phone">+ 998 90 200 00 00</div>
+                <div class="footer__contacts-call">
+                  <a class="footer__contacts-call-link" href="#">Заказать звонок</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__address">
+              <div class="footer__address-icon">
+                <img class="footer__address-img" src="images/marker.png" alt="">
+              </div>
+              <div class="footer__address-content">
+                140100 Узбекистан, Самарканд
+                Беруний 196 д 56
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__payment">
+            <div class="footer__payment-text">Способы оплаты:</div>
+            <div class="footer__payment-list">
+              <div class="footer__payment-item"><img class="footer__payment-img" src="images/click.png" alt=""></div>
+              <div class="footer__payment-item"><img class="footer__payment-img" src="images/payme.png" alt=""></div>
+              <div class="footer__payment-item"><img class="footer__payment-img" src="images/cash.png" alt=""></div>
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-text">Мы в социальных сетях:</div>
+            <div class="footer__social-list">
+              <div class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-img" src="images/fb.png" alt="">
+                </a>
+              </div>
+              <div class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-img" src="images/insta.png" alt="">
+                </a>
+              </div>
+              <div class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-img" src="images/tg.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__brand">
+            <div class="footer__brand-text">Разработка сайтов:</div>
+            <a class="footer__brand-link" href="#">
+              <img class="footer__brand-img" src="images/brand-site.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright-text">© Orzon, 2009–2018</div>
+          <div class="footer__copyright-notfication">Цены в розничных магазинах Orzon могут отличаться от цен, указанных
+            на сайте.</div>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+  <script src="https://kit.fontawesome.com/04c98e7bde.js" crossorigin="anonymous"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/slick.min.js"></script>
+</body>
+
+</html>
